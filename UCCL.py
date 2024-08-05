@@ -26,7 +26,7 @@ import numpy as np
 import torch.distributed as dist
 from prote import Protetype
 
-parser = argparse.ArgumentParser(description='Revisiting Weak-to-Strong Consistency in Semi-Supervised Semantic Segmentation')
+parser = argparse.ArgumentParser(description='Uncertainty-Guided Context Consistency Learning for Semi-supervised Semantic Segmentation')
 parser.add_argument('--config', type=str, default="/home/user/New_idea/HFPL/configs/pascal.yaml")
 parser.add_argument('--labeled-id-path', type=str, default="/home/user/New_idea/HFPL/splits/pascal/1464/labeled.txt")
 parser.add_argument('--unlabeled-id-path', type=str, default="/home/user/New_idea/HFPL/splits/pascal/1464/unlabeled.txt")
