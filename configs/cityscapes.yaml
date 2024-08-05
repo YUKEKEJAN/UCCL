@@ -1,0 +1,36 @@
+# arguments for dataset
+dataset: cityscapes
+nclass: 19
+crop_size: 612
+data_root: /home/yinjianjian/Cityscapes
+
+# arguments for training
+epochs: 240
+batch_size: 2 # per GPU x 4 GPUs
+lr: 0.005
+lr_multi: 1.0
+criterion:
+  name: OHEM
+  kwargs:
+    ignore_index: 255
+    thresh: 0.7
+    min_kept: 200000
+conf_thresh: 0
+
+feat_ali_weight: 0.1
+
+warm_up: 270
+
+drop_weight: 0.01
+F-Drop: True
+
+F-Noise: True
+noise_weight: 0.01
+
+unsupervised_w: 0.01
+ramp_up: 0.1 
+
+# arguments for model
+backbone: resnet50
+replace_stride_with_dilation: [False, False, True]
+dilations: [6, 12, 18]
