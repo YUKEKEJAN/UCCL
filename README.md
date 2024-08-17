@@ -25,7 +25,12 @@ You can download the Cityscapes on [this](https://www.cityscapes-dataset.com/).
 
      CUDA_VISIBLE_DEVICES=0,1,2,3 nohup  python -m torch.distributed.launch --nproc_per_node=4 --master_port=6719   UCCL.py >Cityscapes_1_2.log &
 
+#  Results on Pascal VOC2012.
+![alt text](https://github.com/YUKEKEJAN/UCCL/blob/main/Table1.png)   
 
+#  Results on Cityscapes.
+![alt text](https://github.com/YUKEKEJAN/UCCL/blob/main/Table2.png)   
 
-
+#  Comparison of visualization results on Pascal VOC2012.
+![alt text](https://github.com/YUKEKEJAN/UCCL/blob/main/Table2.png)   
 
