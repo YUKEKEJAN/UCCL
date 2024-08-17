@@ -27,12 +27,12 @@ You can download the Cityscapes on [this](https://www.cityscapes-dataset.com/).
 
 #  Results on Pascal VOC2012.
 
-<img src="https://github.com/YUKEKEJAN/UCCL/blob/main/Visual.png" width="500" alt="Results on Pascal VOC2012">
+<img src="https://github.com/YUKEKEJAN/UCCL/blob/main/Table1.png" width="500" alt="Results on Pascal VOC2012">
 <!-- ![alt text](https://github.com/YUKEKEJAN/UCCL/blob/main/Visual.png)    -->
 
 #  Results on Cityscapes.
 ![alt text](https://github.com/YUKEKEJAN/UCCL/blob/main/Table2.png)   
 
 #  Comparison of visualization results on Pascal VOC2012.
-![alt text](https://github.com/YUKEKEJAN/UCCL/blob/main/Table2.png)   
+![alt text](https://github.com/YUKEKEJAN/UCCL/blob/main/Visual.png)   
 
