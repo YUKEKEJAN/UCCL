@@ -5,6 +5,9 @@ Experimental results on two public benchmarks demonstrate that our proposed meth
 # Pipeline
 ![alt text](https://github.com/YUKEKEJAN/UCCL/blob/main/Net.png)
 
+# Installation
+> pip install -r requirements.txt
+
 
 
 
