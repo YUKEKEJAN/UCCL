@@ -10,8 +10,16 @@ Experimental results on two public benchmarks demonstrate that our proposed meth
 
 # Datasets
 We have demonstrated state-of-the-art experimental performance of our method on Pascal VOC2012 and Cityscapes datasets.
-You can download the Pascal VOC2012 on [this](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/index.html)
-You can download the Cityscapes on [this](https://www.cityscapes-dataset.com/)
+You can download the Pascal VOC2012 on [this](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/index.html).
+
+You can download the Cityscapes on [this](https://www.cityscapes-dataset.com/).
+
+# Training 
+## How to train on Pascal VOC2012
+If training is performed on the 1/2 setting, set the path  for labeled data and the path  for unlabeled data, as well as the corresponding training model parameter storage path. Here is an example shell script to run UCCL on Pascal VOC2012 :
+> CUDA_VISIBLE_DEVICES=0,1,2,3 nohup  python -m torch.distributed.launch --nproc_per_node=4 --master_port=6719 --labeled_id_path={labeled_path}  --unlabeled_id_path={unlabeled_path}  --save_path={path to save parameter}  UCCL.py >VOC_1_2.log &
+
+
 
 
 
